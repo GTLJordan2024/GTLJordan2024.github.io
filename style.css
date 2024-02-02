@@ -814,6 +814,9 @@ a:hover, a:active {
 .blog-page .content-wrap .entry-content p {
     font-size: large;
 }
+.blog-page .content-wrap .entry-content h2 {
+    color: grey;
+}
 
 .blog-page-img img {
     margin: 50px 0px 50px 0px;
