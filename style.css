@@ -883,7 +883,7 @@ a:hover, a:active {
 }
 
 .blog-page-img img {
-    margin: 50px 0px 50px 0px;
+    margin: 0px 0px 0px 0px;
     max-width: 90%; 
     height: auto; 
     max-height: 400px;
@@ -893,9 +893,18 @@ a:hover, a:active {
 .blog-page-inline-img {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-width: 991px) {
+    .blog-page-inline-img {
+        flex-direction: column; /* Change to column layout */
+        align-items: center; /* Center items vertically */
+        margin: 10px 0px 50px 0px;
+    }
+}
+
 .wrap-left {
     float: left;
     margin: 5px 50px 0 0;
@@ -904,6 +913,19 @@ a:hover, a:active {
 .wrap-right {
     float: right;
     margin: 0px 5px 0 50px;
+}
+
+@media screen and (max-width: 991px) {
+    .wrap-left, .wrap-right {
+        float: none;
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .wrapper {
+        flex-direction: column;
+    }
 }
 
 .blog-page-half-img img {
