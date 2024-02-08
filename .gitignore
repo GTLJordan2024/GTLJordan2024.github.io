@@ -21,4 +21,5 @@ build/
 *.idea
 /.idea
 
-dist/
+package.json
+package-lock.json

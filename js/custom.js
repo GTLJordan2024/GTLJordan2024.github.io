@@ -1,4 +1,3 @@
-
 (function($) {
     'use strict';
 
@@ -11,15 +10,16 @@
     // Hero Slider
     var swiper = new Swiper('.hero-slider', {
         slidesPerView: 1,
-        spaceBetween: 0,
+        spaceBetween: 100,
         loop: true,
         pagination: {
             el: '.swiper-pagination'
         },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
+            nextEl: '.swiper-button-next-cus',
+            prevEl: '.swiper-button-prev-cus'
         }
     });
 
 })(jQuery);
+
