@@ -683,6 +683,10 @@ a:hover, a:active {
         margin-top: 0;
     }
 
+    .post-share {
+        max-width: 100%;
+    }
+
     .content-wrap a.read-more {
         margin-top: 0;
     }
@@ -694,6 +698,14 @@ a:hover, a:active {
     .post-share,
     .comments-count {
         width: calc(50% - 100px);
+    }
+}
+
+@media screen and (max-width: 992px){
+    .single-page .content-wrap .entry-title {
+        margin-top: 12px;
+        font-size: 25px;
+        color: #2f2f2f;
     }
 }
 
