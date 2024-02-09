@@ -202,10 +202,10 @@ a:hover, a:active {
 /* Media query for smaller screens, such as phones */
 @media screen and (max-width: 767px) {
     .site-title span {
-        font-size: 20px; /* Adjust the font size for smaller screens */
+        font-size: 13px; /* Adjust the font size for smaller screens */
     }
     .site-title {
-        font-size: 80px;
+        font-size: 45px;
     }
     
 }
@@ -402,7 +402,7 @@ a:hover, a:active {
 
 
     position: absolute;
-    visibility: hidden;
+    visibility: visible;
     top: 50%;
     width: 54px;
     height: 54px;
@@ -466,10 +466,12 @@ a:hover, a:active {
     background: #fff;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (max-width: 991px){
     .swiper-button-next-cus,
     .swiper-button-prev-cus {
-        visibility: visible;
+        width: 35px;
+        height: 35px;
+        
     }
 }
 
@@ -714,12 +716,15 @@ a:hover, a:active {
     display: flex;
     align-items: flex-start;
   }
+
   @media (max-width: 991px) {
     .div-11 {
       flex-direction: column;
-      align-items: stretch;
+      align-items: center;
       gap: 0px;
+      
     }
+    
   }
   .column-3 {
     display: flex;
@@ -732,6 +737,11 @@ a:hover, a:active {
     .column-3 {
       width: 100%;
     }
+    .column-3 img {
+        /* width: 100%; */
+        max-height: 70%;
+      }
+    
   }
   .img-3 {
     aspect-ratio: 3.47;
@@ -756,7 +766,12 @@ a:hover, a:active {
   @media (max-width: 991px) {
     .column-4 {
       width: 100%;
+      margin-bottom:
     }
+    .column-4 img {
+    
+        max-height: 70%;
+      }
   }
   .img-4 {
     aspect-ratio: 2.29;
@@ -784,6 +799,9 @@ a:hover, a:active {
     .column-5 {
       width: 100%;
     }
+    .column-5 img {
+        max-height: 70%;
+      }
   }
   .img-5 {
     aspect-ratio: 2.75;
@@ -798,6 +816,7 @@ a:hover, a:active {
     .img-5 {
       margin-top: 40px;
     }
+    
   }
 
 /*--------------------------------------------------------------
