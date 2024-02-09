@@ -473,6 +473,11 @@ a:hover, a:active {
         
     }
 }
+@media screen and (min-width: 1120px){
+    .swiper-container {
+       width: 1120px;
+    }
+}
 
 /*
 # Youtube Subscribe
@@ -529,7 +534,7 @@ a:hover, a:active {
 # Homepage
 --------------------------------------------------------------*/
 .single-page {
-    padding-top: 100px;
+    padding-top: 20px;
     padding-bottom: 100px;
 }
 
@@ -700,14 +705,21 @@ a:hover, a:active {
 
 .div-10 {
     align-self: center;
-    margin-top: 82px;
+    margin-top: 10px;
     width: 100%;
     max-width: 1152px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 110px;
   }
   @media (max-width: 991px) {
     .div-10 {
       max-width: 100%;
       margin-top: 40px;
+      flex-direction: column;
+      align-items: center;
+      gap: 0px;
     }
   }
   .div-11 {
@@ -761,16 +773,16 @@ a:hover, a:active {
     width: 33%;
     margin-left: 20px;
     margin-bottom: 10px;
+    padding-top: 20px;
   }
   @media (max-width: 991px) {
     .column-4 {
       width: 100%;
-      margin-bottom:
     }
     .column-4 img {
     
         max-height: 70%;
-      }
+      };
   }
   .img-4 {
     aspect-ratio: 2.29;
@@ -793,6 +805,7 @@ a:hover, a:active {
     width: 25%;
     margin-left: 20px;
     margin-bottom: 60px;
+    padding-top: 65px;
   }
   @media (max-width: 991px) {
     .column-5 {
@@ -1333,6 +1346,7 @@ a:hover, a:active {
 .pswp-gallery a img{
     max-height: 300px;
 }
+
 
 /*--------------------------------------------------------------
 # Footer
